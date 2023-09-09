@@ -1,0 +1,73 @@
+---
+import { Icon } from "astro-icon"
+import { ViewTransitions } from "astro:transitions"
+---
+
+<main class="p-4 border-b-2">
+  <section class="space-y-4">
+    <span>
+      <h1 class="text-xl">Work</h1>
+      <h2 class="text-sm">A variety of frontend practice code</h2>
+    </span>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div
+        class="max-w-4xl bg-zinc-800 rounded-lg w-full transition-all duration-300 hover:-translate-y-1 group cursor-pointer hover:ring-2 hover:ring-zinc-400"
+      >
+        <a href="/course-card" class="space-y-2 block w-full h-full p-8">
+          <h1 class="font-medium text-xl" transition:name="course-card-title">
+            Online Course Card
+          </h1>
+          <h2
+            class="w-full group-hover:after:content-['→'] flex justify-between after:text-2xl after:font-bold after:font-mono after:leading-none after:transform after:translate-x-[-0.4em] after:transition-all after:duration-300 after:ease-in-out after:opacity-0 after:group-hover:opacity-100 after:group-hover:translate-x-0 after:group-hover:duration-500 after:group-hover:ease-in-out after:group-hover:transform after:group-hover:mt-0 after:group-hover:ml-2 after:group-hover:font-normal after:group-hover:text-zinc-400 after:group-hover:after:content-['']"
+            transition:name="course-card-description"
+          >
+            Simple online e-business course card with timer
+          </h2>
+          <span class="flex text-xs items-center gap-2">
+            <Icon pack="mdi" name="calendar" class="w-4 h-4" />
+            <p class="text-zinc-400">January 1st, 2023</p>
+          </span>
+        </a>
+      </div>
+      <div
+        class="max-w-4xl bg-zinc-800 rounded-lg transition-all duration-300 hover:-translate-y-1 group cursor-pointer hover:ring-2 hover:ring-zinc-400"
+      >
+        <a href="/food-menu" class="space-y-2 block w-full h-full p-8">
+          <h1 class="font-medium text-xl" transition:name="food-menu-name">
+            Food Menu
+          </h1>
+          <h2
+            class="w-full group-hover:after:content-['→'] flex justify-between after:text-2xl after:font-bold after:font-mono after:leading-none after:transform after:translate-x-[-0.4em] after:transition-all after:duration-300 after:ease-in-out after:opacity-0 after:group-hover:opacity-100 after:group-hover:translate-x-0 after:group-hover:duration-500 after:group-hover:ease-in-out after:group-hover:transform after:group-hover:mt-0 after:group-hover:ml-2 after:group-hover:font-normal after:group-hover:text-zinc-400 after:group-hover:after:content-['']"
+            transition:name="food-menu-description"
+          >
+            Collapsible food menu with various menu options
+          </h2>
+          <span class="flex text-xs items-center gap-2">
+            <Icon pack="mdi" name="calendar" class="w-4 h-4" />
+            <p class="text-zinc-400">January 1st, 2023</p>
+          </span>
+        </a>
+      </div>
+      <div
+        class="max-w-4xl bg-zinc-800 rounded-lg w-full transition-all duration-300 hover:-translate-y-1 group cursor-pointer hover:ring-2 hover:ring-zinc-400"
+      >
+        <a href="/file-uploader" class="space-y-2 block w-full h-full p-8">
+          <h1 class="font-medium text-xl" transition:name="file-uploader-name">
+            File Uploader
+          </h1>
+          <h2
+            class="w-full group-hover:after:content-['→'] flex justify-between after:text-2xl after:font-bold after:font-mono after:leading-none after:transform after:translate-x-[-0.4em] after:transition-all after:duration-300 after:ease-in-out after:opacity-0 after:group-hover:opacity-100 after:group-hover:translate-x-0 after:group-hover:duration-500 after:group-hover:ease-in-out after:group-hover:transform after:group-hover:mt-0 after:group-hover:ml-2 after:group-hover:font-normal after:group-hover:text-zinc-400 after:group-hover:after:content-['']"
+            transition:name="file-uploader-description"
+          >
+            File uploader with progress bars and drag and drop
+          </h2>
+          <span class="flex text-xs items-center gap-2">
+            <Icon pack="mdi" name="calendar" class="w-4 h-4" />
+            <p class="text-zinc-400">January 1st, 2023</p>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
